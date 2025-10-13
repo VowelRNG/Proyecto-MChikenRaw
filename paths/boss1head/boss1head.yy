@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"boss1head",
+  "closed":true,
+  "kind":1,
+  "name":"boss1head",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":-50.0,"y":50.0,},
+    {"speed":100.0,"x":-50.0,"y":-50.0,},
+    {"speed":100.0,"x":50.0,"y":50.0,},
+    {"speed":100.0,"x":50.0,"y":-50.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

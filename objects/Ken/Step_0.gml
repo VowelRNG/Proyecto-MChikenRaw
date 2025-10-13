@@ -7,7 +7,7 @@ instance_destroy()
 
 
 
-if(place_free(x,y+1) && RCdashing == false){
+if(place_free(x,y+1) && RCdashing == false && dashDisponible == true){
 	vspeed += gravedad;
 	
 }
@@ -17,40 +17,48 @@ if(keyboard_check(vk_space) && place_meeting(x,y+1,Wall)) {
 }
 
 if(Herido == false){
-if(keyboard_check(ord("A"))){
+if(keyboard_check(ord("A")) && RCdashing == false && dashDisponible == true){
 	x -= velocidad;
 	image_xscale = -1;
 }
 
-if(keyboard_check(ord("D"))){
+if(keyboard_check(ord("D")) && RCdashing == false && dashDisponible == true){
 	x += velocidad;
 	image_xscale = 1;
 }
 }
 
+	
+	
+
+
 //Ataque
 
-if(keyboard_check_pressed(ord("P")) && Herido == false){
+
+if(keyboard_check_pressed(ord("P")) && Herido == false && Atacando == false && Ulti == false){
 	Atacando = true;
-	alarm[2] = 10;
 	
+	alarm[2] = 10;
+	Ken.sprite_index = KenPsp;
 	if(Ken.image_xscale == 1){
 	instance_create_layer(x+10,y,"Instances", Golpe)
-	Golpe.hspeed = Golpe.velocidad
+	
+	
 	
 	
 	}else {
 	instance_create_layer(x-10,y,"Instances", Golpe)
-		Golpe.hspeed = -Golpe.velocidad
+	
 		Golpe.image_xscale = -1;
 	}
-	
-	
-	Ken.sprite_index = KenPsp;
-
 }
 
-if(Atacando == true && Herido == false){
+	
+	
+
+
+
+if(Atacando == true && Herido == false && RCdashing == false){
 	vspeed = 0;
 	hspeed = 0;
 	if(Ken.image_xscale = -1){
@@ -92,9 +100,6 @@ Ken.sprite_index = KenRCsp;
 //Rage Controlled
 
 if (Controlled != noone) {
-	with FrenchFri{
-		vida -= 1
-	}
     Invincible = true;
 	RCdisponible = false;
 	instance_destroy(RageControl);
@@ -131,10 +136,10 @@ if(dashDisponible == true){
 if(keyboard_check(ord("I")) && keyboard_check(ord("D"))){
 	dashDisponible = false;
 	RCdisponible = false;
-	hspeed = RCdash;
+	hspeed = +RCdash
 	vspeed = 0;
 	Invincible = true;
-	alarm[6] = 10;
+	alarm[6] = 5;
 }
 
 if(keyboard_check(ord("I")) && keyboard_check(ord("A"))){
@@ -143,7 +148,7 @@ if(keyboard_check(ord("I")) && keyboard_check(ord("A"))){
 	hspeed = -RCdash;
 	vspeed = 0;
 	Invincible = true;
-	alarm[6] = 10;
+	alarm[6] = 5;
 }
 
 if(keyboard_check(ord("I")) && keyboard_check(ord("W"))){
@@ -152,7 +157,7 @@ if(keyboard_check(ord("I")) && keyboard_check(ord("W"))){
 	vspeed = -RCdash;
 	hspeed = 0;
 	Invincible = true;
-	alarm[6] = 10;
+	alarm[6] = 5;
 }
 
 }
@@ -173,15 +178,5 @@ camera_set_view_pos(cam, camx, camy);
 
 //inputs
 
-if(keyboard_check(ord("A"))){
-	if(keyboard_check(ord("S"))){
-		if(keyboard_check(ord("D"))){
-			if(keyboard_check(ord("P"))){
-				instance_create_layer(x+20,y,"Instances",Superpunch);
-					Superpunch.speed = 20;
-			}
-		}
-	}
-	
-}
+
 

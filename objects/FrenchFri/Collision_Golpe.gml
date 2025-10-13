@@ -1,4 +1,4 @@
-/* if(image_xscale == -1){
+if(image_xscale == -1){
 hspeed -= 7;	
 vspeed -= 7;
 	

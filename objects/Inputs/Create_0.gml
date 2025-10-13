@@ -6,7 +6,7 @@ input = "";
 
 
 SuperPunch = ""
-MultiHit = "PPP"
-PowerGeysa = ""
+
+
 		
 	

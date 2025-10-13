@@ -1,1 +1,1 @@
-draw_text(8,24,input);
+//draw_text(8,24,input);

@@ -2,10 +2,12 @@ vida -= 5;
 Herido = true;
 
 if(image_xscale == -1){
-hspeed -= 3;	
-vspeed -= 2;
+hspeed -= 10;	
+vspeed -= 10;
 	
 }else{
-hspeed += 3;	
-vspeed -= 2;
+hspeed += 10;	
+vspeed -= 10;
 }
+
+instance_destroy(Golpe)

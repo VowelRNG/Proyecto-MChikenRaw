@@ -1,0 +1,22 @@
+{
+  "$GMPath":"",
+  "%Name":"AtaqueR",
+  "closed":true,
+  "kind":1,
+  "name":"AtaqueR",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":660.0,"y":233.5,},
+    {"speed":100.0,"x":787.39874,"y":239.40878,},
+    {"speed":100.0,"x":921.0,"y":257.5,},
+    {"speed":100.0,"x":981.896,"y":203.25946,},
+    {"speed":100.0,"x":1017.2119,"y":134.91516,},
+    {"speed":100.0,"x":1020.8677,"y":851.99054,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

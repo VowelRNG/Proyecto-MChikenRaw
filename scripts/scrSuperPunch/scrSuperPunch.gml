@@ -1,10 +1,13 @@
 function scrSuperPunch(){
-	if(!instance_exists(Superpunch)){
-		instance_create_layer(Ken.x,Ken.y,"Instances",Superpunch)
-		with Inputs{
-		alarm[1] = 90;	
-			
-		}
+	
+	if(!instance_exists(Superpunch) && Ken.Ulti == false){
+		Ken.Ulti = true;
+		Ken.image_index = KenSuperPunchsp;
+		game_set_speed(30, gamespeed_fps);
+		Ken.alarm[8] = 10;
 		
-	}
+			
+		
+	
+}
 }

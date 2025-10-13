@@ -3,7 +3,3 @@ if(input == SuperPunch){
 	
 }
 
-if(input == PowerGeysa){
-	scrPowerGeyser();
-	
-}

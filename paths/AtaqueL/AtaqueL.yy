@@ -1,0 +1,22 @@
+{
+  "$GMPath":"",
+  "%Name":"AtaqueL",
+  "closed":true,
+  "kind":1,
+  "name":"AtaqueL",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":278.0,"y":38.5,},
+    {"speed":100.0,"x":76.09601,"y":48.633392,},
+    {"speed":100.0,"x":-134.66397,"y":43.467297,},
+    {"speed":100.0,"x":-228.5964,"y":-41.411083,},
+    {"speed":100.0,"x":-241.38019,"y":526.11597,},
+    {"speed":100.0,"x":55.783936,"y":528.21875,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
