@@ -5,6 +5,11 @@ if(place_free(x,y+1)){
 	
 }
 
+if(vida <= 0){
+	instance_destroy()
+	Ken.Controlled = noone
+}
+
 
 
 if(place_meeting(x-30,y,Golpe) || place_meeting(x+30,y,Superpunch)){
