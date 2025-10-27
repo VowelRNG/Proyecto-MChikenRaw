@@ -1,4 +1,4 @@
-vida -= 5;
+vida -= 1;
 Herido = true;
 
 if(image_xscale == -1){

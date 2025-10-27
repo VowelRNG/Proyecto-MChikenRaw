@@ -3,12 +3,12 @@ if(vida <= 0){
 instance_destroy()	
 }
 
-if(instance_exists(Ken) || room != BossBattle1){
+if(instance_exists(Ken) && room != BossBattle1){
 if(Ken.x > x && Herido == false && !place_free(x,y+1)){
 	hspeed = velocidad
 	image_xscale = -1
 	
-}else if(Ken.x < x && Herido == false && !place_free(x,y+1) || room != BossBattle1){
+}else if(Ken.x < x && Herido == false && !place_free(x,y+1)){
 	hspeed = -velocidad
 	image_xscale = 1;
 }
@@ -18,13 +18,13 @@ hspeed = 0;
 
 if(place_meeting(x-30,y,Golpe)){
 	Herido = true;
-	alarm[0] = 60;
+	alarm[0] = 50;
 	sprite_index = minionDamagedsp;
 
 }
 if(place_meeting(x+30,y,Golpe)){
 	Herido = true;
-	alarm[0] = 60;
+	alarm[0] = 50;
 	image_xscale = -1;
 	sprite_index = minionDamagedsp;
 }

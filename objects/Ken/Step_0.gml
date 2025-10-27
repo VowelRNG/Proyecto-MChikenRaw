@@ -59,12 +59,12 @@ if(keyboard_check_pressed(ord("P")) && Herido == false && Atacando == false && U
 
 
 if(Atacando == true && Herido == false && RCdashing == false){
-	vspeed = 0;
+	vspeed = -2;
 	hspeed = 0;
 	if(Ken.image_xscale = -1){
-	x -= 5;
+	x -= 3;
 }else {
-	x += 5;
+	x += 3;
 }
 }
 
@@ -101,8 +101,8 @@ Ken.sprite_index = KenRCsp;
 
 if (Controlled != noone) {
     Invincible = true;
+	Herido = false;
 	RCdisponible = false;
-	instance_destroy(RageControl);
 	sprite_index = Controllingsp;
     x = Controlled.x;
     y = Controlled.y - sprite_height;
@@ -130,37 +130,17 @@ if (Controlled != noone) {
 
 
 //dash
-if(dashDisponible == true){
-	alarm[7] = 30;
+
 	
-if(keyboard_check(ord("I")) && keyboard_check(ord("D"))){
-	dashDisponible = false;
-	RCdisponible = false;
-	hspeed = +RCdash
-	vspeed = 0;
-	Invincible = true;
-	alarm[6] = 5;
+if(keyboard_check_pressed(ord("I")) && keyboard_check_pressed(ord("D"))){
+
+hspeed = 10;
+vspeed = 0;
+	
 }
 
-if(keyboard_check(ord("I")) && keyboard_check(ord("A"))){
-	dashDisponible = false;
-	RCdisponible = false;
-	hspeed = -RCdash;
-	vspeed = 0;
-	Invincible = true;
-	alarm[6] = 5;
-}
 
-if(keyboard_check(ord("I")) && keyboard_check(ord("W"))){
-	dashDisponible = false;
-	RCdisponible = false;
-	vspeed = -RCdash;
-	hspeed = 0;
-	Invincible = true;
-	alarm[6] = 5;
-}
 
-}
 //camera follow
 
 var cam = view_camera[0];

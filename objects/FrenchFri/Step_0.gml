@@ -20,10 +20,11 @@ if(place_meeting(x+30,y,Golpe) || place_meeting(x+30,y,Superpunch)){
 	vida -=10;
 }
 
-with Ken {
-if(Controlled != noone){
-	FrenchFri.sprite_index = FFDamagedsp
-	FrenchFri.alarm[0] = 20;
+if(instance_exists(Ken)){
+if(Ken.Controlled == self){
+	sprite_index = FFDamagedsp
+	alarm[0] = 20;
+	vida -= 1
 }
-	
 }
+
