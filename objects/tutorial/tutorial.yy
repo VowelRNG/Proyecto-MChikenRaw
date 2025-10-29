@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Mapa",
+  "%Name":"tutorial",
   "eventList":[],
   "managed":true,
-  "name":"Mapa",
+  "name":"tutorial",
   "overriddenProperties":[],
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite25",
+    "path":"sprites/Sprite25/Sprite25.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
