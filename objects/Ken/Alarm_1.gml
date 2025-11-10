@@ -1,1 +1,2 @@
 RCdisponible = true;
+PuedeAtacar = true;

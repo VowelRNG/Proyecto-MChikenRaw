@@ -1,9 +1,8 @@
-vida = 700;
-path_start(boss1head,6,path_action_restart,false)
+vida = 30;
 if(instance_exists(Boss)){
 	
-	
-audio_play_sound(Boss1BattleTheme,0,true)
+audio_stop_all()
+audio_play_sound(Boss1BattleTheme,infinity,true)
 
 }
 

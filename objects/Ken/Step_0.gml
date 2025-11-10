@@ -1,33 +1,111 @@
 
+	
+	
+	
 
-if(Ken.Vida <= 0){
-instance_destroy()	
+if(Invincible == true){
+mask_index = -1;
+
+}
+
+
+
+if(Vida <= 0){
+	muerto = true;
+	room_restart()
+	room_goto(muerteRoom)
+instance_destroy()
+	
+}
+	
+//movimiento
+
+Botonsalto = keyboard_check_pressed(vk_space);
+botonDerecha = keyboard_check(ord("D"));
+botonIzq = keyboard_check(ord("A"));
+
+if (botonDerecha && !RCdashing && Herido == false) {
+    if (place_free(x + 4, y) && instance_place(x + 4, y, Wall) == noone) {
+        hspeed = 7;
+		if(salto == true && !Atacando){
+		sprite_index = KenWalksp
+		}
+        image_xscale = 1;
+		
+
+    } else {
+        
+        while (!place_free(x + 1, y)) {
+            x -= 1;
+			
+        }
+    }
+} else if (botonIzq && !RCdashing && Herido == false) {
+    if (place_free(x - 4, y) && instance_place(x - 4, y, Wall) == noone) {
+        hspeed = -7;
+		if(salto == true && !Atacando){
+		sprite_index = KenWalksp
+		}
+        image_xscale = -1;
+
+    } else {
+       
+        while (!place_free(x - 1, y)) {
+            x += 1;
+        }
+    } 
+}else if(!Herido && !RCdashing && !Atacando){
+	
+	hspeed = 0;
+	if(salto){
+	sprite_index = Kensp;
+	}
+}
+
+if(RCdashing == false){
+	
+vspeed += gravedad;
+}
+if (Botonsalto && salto) {
+    vspeed = -13;  
+    salto = false;
+	if(Herido == false){
+		sprite_index = KenSaltosp;
+	}
 	
 }
 
 
+instancia_coso = instance_place(x, y + vspeed, Wall);
 
-if(place_free(x,y+1) && RCdashing == false && dashDisponible == true){
-	vspeed += gravedad;
-	
-}
-if(keyboard_check(vk_space) && place_meeting(x,y+1,Wall)) {
-	
-	vspeed -= salto;
-}
 
-if(Herido == false){
-if(keyboard_check(ord("A")) && RCdashing == false && dashDisponible == true){
-	x -= velocidad;
-	image_xscale = -1;
-}
-
-if(keyboard_check(ord("D")) && RCdashing == false && dashDisponible == true){
-	x += velocidad;
-	image_xscale = 1;
-}
+if (vspeed < 0) {
+    if (instancia_coso == noone) {
+        y += vspeed;
+    } else {
+       
+        while (instance_place(x, y + 1, Wall) != noone) {
+            y -= 1;
+        }
+        vspeed = 0;
+    }
 }
 
+
+if (vspeed > 0) {
+    if (instancia_coso == noone) {
+        y += vspeed;
+    } else {
+       
+        while (instance_place(x, y + 1, Wall) != noone) {
+            y -= 1;
+        }
+        vspeed = 0;
+        salto = true;
+		
+    }
+}
+ 
 	
 	
 
@@ -37,16 +115,16 @@ if(keyboard_check(ord("D")) && RCdashing == false && dashDisponible == true){
 
 if(keyboard_check_pressed(ord("P")) && Herido == false && Atacando == false && Ulti == false){
 	Atacando = true;
-	
+	RCdisponible = false;
 	alarm[2] = 10;
 	Ken.sprite_index = KenPsp;
-	if(Ken.image_xscale == 1){
+	if(Ken.image_xscale == 1 && PuedeAtacar == true){
 	instance_create_layer(x+10,y,"Instances", Golpe)
 	
 	
 	
 	
-	}else {
+	}else if(Ken.image_xscale == -1 && PuedeAtacar == true){
 	instance_create_layer(x-10,y,"Instances", Golpe)
 	
 		Golpe.image_xscale = -1;
@@ -59,12 +137,11 @@ if(keyboard_check_pressed(ord("P")) && Herido == false && Atacando == false && U
 
 
 if(Atacando == true && Herido == false && RCdashing == false){
-	vspeed = -2;
 	hspeed = 0;
 	if(Ken.image_xscale = -1){
-	x -= 3;
+	x -= 1;
 }else {
-	x += 3;
+	x += 1;
 }
 }
 
@@ -73,24 +150,31 @@ if(Atacando == true && Herido == false && RCdashing == false){
 if(keyboard_check_pressed(ord("O")) && Herido == false && RCdisponible == true){
 	RCdashing = true;
 	RCdisponible = false;
-	alarm[0] = 19;
+	alarm[0] = 20;
 	alarm[1] = 60;
 }
 
 if(RCdashing == true && Herido == false){
-	Invincible = true;
+Invincible = true;
+	
 	alarm[1] = 7;
-vspeed = 0;
+
+vspeed = -0.1;
+
+	
 Ken.sprite_index = KenRCsp;
 
 	if(Ken.image_xscale == 1 && !instance_exists(RageControl)){
-		hspeed = +RCdash
+		hspeed = 15;
+		RCdisponible = false;
+		
 	instance_create_layer(x+80,y,"Instances", RageControl)
-	RageControl.hspeed = Ken.hspeed
+	RageControl.hspeed = RCdash
 	
 	
 	}else if(Ken.image_xscale == -1 &&  !instance_exists(RageControl)){
-		hspeed = -RCdash
+		hspeed = -15;
+		RCdisponible = false;
 	instance_create_layer(x-80,y,"Instances", RageControl)
 		RageControl.hspeed = Ken.hspeed
 		RageControl.image_xscale = -1;
@@ -100,44 +184,26 @@ Ken.sprite_index = KenRCsp;
 //Rage Controlled
 
 if (Controlled != noone) {
+	instance_destroy(RageControl)
     Invincible = true;
 	Herido = false;
 	RCdisponible = false;
+	RCdashing = false;
 	sprite_index = Controllingsp;
+	hspeed = 0;
+	vspeed = 0;
     x = Controlled.x;
     y = Controlled.y - sprite_height;
 
-    // Tecla para desmontar
-    if ((keyboard_check_pressed(ord("I")) && Controlled != noone)|| FrenchFri.vida == 0) {
-		RCdisponible = true;
-		Herido = true;
-		vspeed = 0
-		hspeed = 0
-        Controlled = noone;
-		sprite_index = KenDamagedsp
-		alarm[3] = 20;
-		y -= 100
-			if(Ken.image_xscale = -1){
-		hspeed += 5;	
-		vspeed -= 10;
-		}else{
-		hspeed -= 5;	
-		vspeed -= 10;
-		}
-    }
+}else if(Controlled == noone){
+	
+
+RCdisponible = true;
 }
 
 
 
-//dash
 
-	
-if(keyboard_check_pressed(ord("I")) && keyboard_check_pressed(ord("D"))){
-
-hspeed = 10;
-vspeed = 0;
-	
-}
 
 
 
@@ -155,8 +221,25 @@ camy = clamp(camy, 0, room_height	 - camera_get_view_height(cam));
 camera_set_view_pos(cam, camx, camy);
 
 
+if(Ulti == true){
+
+	sprite_index = KenSuperPunchsp;
+	
+}
+
+
+if (x < 0 || x > room_width || y < 0 || y > room_height)
+{
+	muerto = true;
+    instance_destroy(self);
+	room_goto(muerteRoom)
+}
 
 //inputs
+
+if(keyboard_check_pressed(vk_escape)){
+room_goto(Nivel1)	
+}
 
 
 

@@ -1,5 +1,5 @@
 
 if(instance_exists(Boss)){
-Boss.vida -= 20;
+Boss.vida -= 1;
 }
 instance_destroy(Minion)

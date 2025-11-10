@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"Spawnersp",
   "bboxMode":0,
   "bbox_bottom":268,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c4c54453-e339-4821-bcde-d4562ec25333","name":"c4c54453-e339-4821-bcde-d4562ec25333","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c4c54453-e339-4821-bcde-d4562ec25333","name":"c4c54453-e339-4821-bcde-d4562ec25333","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -25,7 +25,7 @@
   ],
   "name":"Spawnersp",
   "nineSlice":null,
-  "origin":1,
+  "origin":4,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -80,7 +80,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":250,
-    "yorigin":0,
+    "yorigin":150,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

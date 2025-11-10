@@ -70,3 +70,5 @@ ds_map_add(mapa, paradero7, p7);
 var nb = ds_map_create();
 ds_map_add(nb, "A", paradero7);
 ds_map_add(mapa, nivelboss, nb);
+
+

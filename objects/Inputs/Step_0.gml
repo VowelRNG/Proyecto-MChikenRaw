@@ -20,8 +20,11 @@ if(input == SuperPunch){
 	
 }
 
-if(keyboard_check(ord("N"))){
-	room_goto(BossBattle1)	
+
+if (keyboard_check_pressed(vk_escape)) {
+    global.anterioroom = room;
+	global.pausado = true;
+    room_goto(Roompausa);          
+}
 }
 
-}

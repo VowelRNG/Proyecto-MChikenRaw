@@ -41,3 +41,7 @@ if (keyboard_check_pressed(vk_enter)) {
     if (nivel_actual == nivel4) room_goto(Nivel4);
 	if (nivel_actual == nivelboss) room_goto(BossBattle1);
 }
+
+
+
+

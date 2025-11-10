@@ -1,3 +1,5 @@
+
+
 timer += 1;
 
 if (timer >= spawn_time) {
@@ -13,12 +15,19 @@ if(vida<= 0){
 
 if(place_meeting(x,y,Golpe)){
 	
-	vida -= 5
+	vida -= 1
 	
 }
 
 if(place_meeting(x,y,Superpunch)){
 	
-	vida -= 5
+	vida -= 1
 	
+}
+
+
+if(instance_exists(Ken)){
+if(Ken.Controlled == self){
+	vida -= 1
+}
 }

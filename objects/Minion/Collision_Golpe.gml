@@ -1,13 +1,11 @@
 vida -= 1;
 Herido = true;
 
-if(image_xscale == -1){
-hspeed -= 10;	
-vspeed -= 10;
+if(facing == "l"){
+facing = "r";
 	
-}else{
-hspeed += 10;	
-vspeed -= 10;
+}else if(facing == "r"){
+facing = "l";
 }
 
 instance_destroy(Golpe)

@@ -11,10 +11,7 @@ function SSuperPunch(Ken, Superpunch){
 }
 
 
-
-gravedad = 0.5;
-velocidad = 6;
-salto = 15;
+OnGround = true;
 RCdash = 15;
 RCdisponible = true;
 RCdashing = false;
@@ -27,4 +24,22 @@ Invincible = false;
 Controlled = noone;
 dashing = false;
 dashDisponible = true;
-//Inputs
+//lvl states
+muerto = false;
+
+lvlt = false;
+lvl1 = false;
+lvl2 = false;
+lvl3 = false;
+lvl4 = false;
+lvlboss = false;
+
+
+ 
+gravedad= 0.5
+velocidad_vertical= 0
+velocidad_vertical += gravedad
+instancePlace = instance_place(x, y + vspeed, Wall);
+salto= false
+
+

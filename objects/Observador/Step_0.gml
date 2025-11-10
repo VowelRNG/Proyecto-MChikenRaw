@@ -1,6 +1,6 @@
-if(room == OpeningRoom){
+ if(room == OpeningRoom){
 if(keyboard_check(vk_anykey)){
-room_goto(Nivel1)
+room_goto(mapita)
 	
 }
 	

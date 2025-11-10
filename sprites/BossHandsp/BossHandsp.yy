@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"BossHandsp",
   "bboxMode":2,
   "bbox_bottom":309,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"8dfe7d7b-6259-4078-a344-976cde6481be","name":"8dfe7d7b-6259-4078-a344-976cde6481be","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8dfe7d7b-6259-4078-a344-976cde6481be","name":"8dfe7d7b-6259-4078-a344-976cde6481be","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
