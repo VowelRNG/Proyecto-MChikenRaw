@@ -1,5 +1,5 @@
 Ken.Controlled = self;
-
+alarm[1] = 30;
 instance_destroy(RageControl)
 
 Ken.x = x;
