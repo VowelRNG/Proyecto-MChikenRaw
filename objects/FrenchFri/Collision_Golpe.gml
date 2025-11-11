@@ -1,8 +1,12 @@
-if(image_xscale == -1){
-hspeed -= 7;	
-vspeed -= 7;
+vida -= 1;
+Herido = true;
+alarm[0] = 10;
+
+if(facing == "l"){
+facing = "r";
 	
-}else{
-hspeed += 7;	
-vspeed -= 7;
+}else if(facing == "r"){
+facing = "l";
 }
+
+instance_destroy(Golpe)

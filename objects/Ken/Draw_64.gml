@@ -1,3 +1,8 @@
+if(Ulti == false){
+draw_sprite(Gosp,3,80,150)
+	
+}
+draw_sprite(iconosp,0,240,50);
 
 	
 

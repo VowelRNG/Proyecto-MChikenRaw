@@ -1,1 +1,2 @@
 puededisparar = true;
+disparando = false;

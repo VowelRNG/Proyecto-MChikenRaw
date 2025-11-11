@@ -9,7 +9,9 @@ case -1:
 SuperPunch = "SDSAP"
 
 break;
-	
+
+
+
 }
 
 
@@ -24,7 +26,21 @@ if(input == SuperPunch){
 if (keyboard_check_pressed(vk_escape)) {
     global.anterioroom = room;
 	global.pausado = true;
-    room_goto(Roompausa);          
+    room_goto(Roompausa);
 }
+
+}
+
+if(!instance_exists(Ken) && room != muerteRoom && room != pausa){
+	room_persistent[room] = false
+	room_restart()
+	room_goto(muerteRoom)
+	
+}
+
+if(room == BossBattle1 && !instance_exists(Boss)){
+
+room_goto(winroom)	
+	
 }
 

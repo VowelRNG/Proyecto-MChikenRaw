@@ -23,24 +23,29 @@ hspeed = 0;
 
 if(place_meeting(x-30,y,Superpunch)){
 	Herido = true;
-	vida -= 10;
+	vida -= 1;
 	alarm[0] = 60;
-	sprite_index = minionDamagedsp;
+	
 
 }
 if(place_meeting(x+30,y,Superpunch)){
 	Herido = true;
-	vida -= 10;
+	vida -= 1;
 	alarm[0] = 60;
-	sprite_index = minionDamagedsp;
+	
 }
 
 
 
 if(place_free(x,y+1)){
 	vspeed += gravedad;
-	
 }
+if(room == BossBattle1){
+if(BossSpawner.disparando == true){
+vspeed -= 10;
+}
+}
+
 
 
 if (x < 0 || x > room_width || y < 0 || y > room_height)
@@ -48,3 +53,6 @@ if (x < 0 || x > room_width || y < 0 || y > room_height)
     // El objeto está fuera de la room
     instance_destroy(self);
 }
+
+
+

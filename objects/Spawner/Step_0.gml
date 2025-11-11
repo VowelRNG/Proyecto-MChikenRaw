@@ -19,12 +19,6 @@ if(place_meeting(x,y,Golpe)){
 	
 }
 
-if(place_meeting(x,y,Superpunch)){
-	
-	vida -= 1
-	
-}
-
 
 if(instance_exists(Ken)){
 if(Ken.Controlled == self){

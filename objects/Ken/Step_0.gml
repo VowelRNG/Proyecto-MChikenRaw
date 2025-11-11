@@ -12,9 +12,13 @@ mask_index = -1;
 
 if(Vida <= 0){
 	muerto = true;
-	room_restart()
-	room_goto(muerteRoom)
 instance_destroy()
+}
+
+if (x < 0 || x > room_width || y < 0 || y > room_height)
+{
+	muerto = true;
+    instance_destroy();
 	
 }
 	
@@ -84,7 +88,7 @@ if (vspeed < 0) {
         y += vspeed;
     } else {
        
-        while (instance_place(x, y + 1, Wall) != noone) {
+        while (instance_place(x, y + 1, Wall) != noone ) {
             y -= 1;
         }
         vspeed = 0;
@@ -97,7 +101,7 @@ if (vspeed > 0) {
         y += vspeed;
     } else {
        
-        while (instance_place(x, y + 1, Wall) != noone) {
+        while (instance_place(x, y + 1, Wall) != noone ) {
             y -= 1;
         }
         vspeed = 0;
@@ -159,7 +163,7 @@ Invincible = true;
 	
 	alarm[1] = 7;
 
-vspeed = -0.1;
+vspeed = -1;
 
 	
 Ken.sprite_index = KenRCsp;
@@ -228,18 +232,9 @@ if(Ulti == true){
 }
 
 
-if (x < 0 || x > room_width || y < 0 || y > room_height)
-{
-	muerto = true;
-    instance_destroy(self);
-	room_goto(muerteRoom)
-}
 
-//inputs
 
-if(keyboard_check_pressed(vk_escape)){
-room_goto(Nivel1)	
-}
+
 
 
 

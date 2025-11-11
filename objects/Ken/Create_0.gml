@@ -27,12 +27,12 @@ dashDisponible = true;
 //lvl states
 muerto = false;
 
-lvlt = false;
-lvl1 = false;
-lvl2 = false;
-lvl3 = false;
-lvl4 = false;
-lvlboss = false;
+global.lvlt = false;
+global.lvl1 = false;
+global.lvl2 = false;
+global.lvl3 = false;
+global.lvl4 = false;
+global.lvlboss = false;
 
 
  
@@ -40,6 +40,6 @@ gravedad= 0.5
 velocidad_vertical= 0
 velocidad_vertical += gravedad
 instancePlace = instance_place(x, y + vspeed, Wall);
-salto= false
+salto = false;
 
 
