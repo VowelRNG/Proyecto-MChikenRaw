@@ -92,6 +92,7 @@
     {"id":{"name":"scrSuperPunch","path":"scripts/scrSuperPunch/scrSuperPunch.yy",},},
     {"id":{"name":"Boss1BattleTheme","path":"sounds/Boss1BattleTheme/Boss1BattleTheme.yy",},},
     {"id":{"name":"MapTheme","path":"sounds/MapTheme/MapTheme.yy",},},
+    {"id":{"name":"MusicaInicio","path":"sounds/MusicaInicio/MusicaInicio.yy",},},
     {"id":{"name":"Nivel1ost","path":"sounds/Nivel1ost/Nivel1ost.yy",},},
     {"id":{"name":"Nivel2ost","path":"sounds/Nivel2ost/Nivel2ost.yy",},},
     {"id":{"name":"Nivel3ost","path":"sounds/Nivel3ost/Nivel3ost.yy",},},
