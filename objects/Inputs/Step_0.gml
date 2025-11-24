@@ -32,7 +32,7 @@ if (keyboard_check_pressed(vk_escape)) {
 }
 
 if(!instance_exists(Ken) && room != muerteRoom && room != pausa){
-	room_persistent[room] = false
+	room_persistent = false
 	room_restart()
 	room_goto(muerteRoom)
 	

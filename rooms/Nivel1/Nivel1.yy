@@ -90,6 +90,7 @@
     {"name":"inst_37DE9631","path":"rooms/Nivel1/Nivel1.yy",},
     {"name":"inst_190904AF","path":"rooms/Nivel1/Nivel1.yy",},
     {"name":"inst_350C8CCC","path":"rooms/Nivel1/Nivel1.yy",},
+    {"name":"inst_D2CF280","path":"rooms/Nivel1/Nivel1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -178,6 +179,7 @@
         {"$GMRInstance":"v4","%Name":"inst_37DE9631","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_37DE9631","objectId":{"name":"colisionenemigos","path":"objects/colisionenemigos/colisionenemigos.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":6.0,"x":17177.0,"y":1249.0,},
         {"$GMRInstance":"v4","%Name":"inst_190904AF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_190904AF","objectId":{"name":"Wall","path":"objects/Wall/Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":7.0,"scaleY":1.0,"x":18464.0,"y":1440.0,},
         {"$GMRInstance":"v4","%Name":"inst_350C8CCC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_350C8CCC","objectId":{"name":"Wall","path":"objects/Wall/Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":19360.0,"y":1184.0,},
+        {"$GMRInstance":"v4","%Name":"inst_D2CF280","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D2CF280","objectId":{"name":"Wall","path":"objects/Wall/Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":330.0,"scaleY":1.0,"x":-64.0,"y":-64.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_183AF004","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_183AF004","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":328.14062,"scaleY":31.5,"spriteId":{"name":"BackgroundSP","path":"sprites/BackgroundSP/BackgroundSP.yy",},"x":0.0,"y":0.0,},

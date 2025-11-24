@@ -34,7 +34,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"MChicken Raw",
   "resources":[
@@ -115,6 +115,7 @@
     {"id":{"name":"completosp","path":"sprites/completosp/completosp.yy",},},
     {"id":{"name":"Controlessp","path":"sprites/Controlessp/Controlessp.yy",},},
     {"id":{"name":"Controllingsp","path":"sprites/Controllingsp/Controllingsp.yy",},},
+    {"id":{"name":"explosionsp","path":"sprites/explosionsp/explosionsp.yy",},},
     {"id":{"name":"FFDamagedsp","path":"sprites/FFDamagedsp/FFDamagedsp.yy",},},
     {"id":{"name":"flecha","path":"sprites/flecha/flecha.yy",},},
     {"id":{"name":"fondolvl3","path":"sprites/fondolvl3/fondolvl3.yy",},},

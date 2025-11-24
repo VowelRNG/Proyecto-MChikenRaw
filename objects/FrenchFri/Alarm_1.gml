@@ -1,8 +1,4 @@
 
-
-if(vida <= 0){
-		
-	
 	
 	if(Ken.Controlled != noone){
 	Ken.Controlled = noone
@@ -21,10 +17,4 @@ if(vida <= 0){
 		Ken.vspeed -= 10;
 		}
 	}
-	
 	instance_destroy()
-		}
-	
-
-	
-	

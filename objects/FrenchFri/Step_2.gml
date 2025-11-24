@@ -1,7 +1,11 @@
 
 
 if(Muerto == true){
-	instance_destroy()
+	sprite_index = explosionsp
+	if(image_number == 17){
+		
+	
+	
 	if(Ken.Controlled != noone){
 	Ken.Controlled = noone
 	Ken.Vida += 1;
@@ -19,4 +23,10 @@ if(Muerto == true){
 		Ken.vspeed -= 10;
 		}
 	}
-    }
+	
+	instance_destroy()
+		}
+	
+
+	}
+    
