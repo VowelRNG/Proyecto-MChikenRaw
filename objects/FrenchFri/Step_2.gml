@@ -1,10 +1,8 @@
 
 
 if(Muerto == true){
-	sprite_index = explosionsp
-	if(image_number == 17){
-		
-	
+	sprite_index = explosionsp;
+
 	
 	if(Ken.Controlled != noone){
 	Ken.Controlled = noone
@@ -24,9 +22,11 @@ if(Muerto == true){
 		}
 	}
 	
-	instance_destroy()
+	if (image_index >= image_number - 1) {
+        instance_destroy();
+    }
 		}
 	
 
-	}
+	
     

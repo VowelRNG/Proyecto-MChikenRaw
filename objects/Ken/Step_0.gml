@@ -135,10 +135,6 @@ if(keyboard_check_pressed(ord("P")) && Herido == false && Atacando == false && U
 	}
 }
 
-	
-	
-
-
 
 if(Atacando == true && Herido == false && RCdashing == false){
 	hspeed = 0;
@@ -154,16 +150,16 @@ if(Atacando == true && Herido == false && RCdashing == false){
 if(keyboard_check_pressed(ord("O")) && Herido == false && RCdisponible == true){
 	RCdashing = true;
 	RCdisponible = false;
+	
 	alarm[0] = 20;
-	alarm[1] = 60;
+	
 }
 
 if(RCdashing == true && Herido == false){
 Invincible = true;
 	
-	alarm[1] = 7;
 
-vspeed = -1;
+vspeed = -0.000000001;
 
 	
 Ken.sprite_index = KenRCsp;
@@ -198,6 +194,7 @@ if (Controlled != noone) {
 	vspeed = 0;
     x = Controlled.x;
     y = Controlled.y - sprite_height;
+	alarm[9] = 90;
 
 }else if(Controlled == noone){
 	

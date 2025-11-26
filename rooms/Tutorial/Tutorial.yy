@@ -35,6 +35,7 @@
     {"name":"inst_472C0D7C","path":"rooms/Tutorial/Tutorial.yy",},
     {"name":"inst_13A46865","path":"rooms/Tutorial/Tutorial.yy",},
     {"name":"inst_3B771CC7","path":"rooms/Tutorial/Tutorial.yy",},
+    {"name":"inst_1DD6F2E8","path":"rooms/Tutorial/Tutorial.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -68,6 +69,7 @@
         {"$GMRInstance":"v4","%Name":"inst_472C0D7C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_472C0D7C","objectId":{"name":"colisionenemigos","path":"objects/colisionenemigos/colisionenemigos.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.09375,"scaleY":14.5,"x":10013.0,"y":464.0,},
         {"$GMRInstance":"v4","%Name":"inst_13A46865","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_13A46865","objectId":{"name":"Minion","path":"objects/Minion/Minion.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4896.0,"y":832.0,},
         {"$GMRInstance":"v4","%Name":"inst_3B771CC7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B771CC7","objectId":{"name":"colisionenemigos","path":"objects/colisionenemigos/colisionenemigos.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5504.0,"y":928.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1DD6F2E8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1DD6F2E8","objectId":{"name":"Wall","path":"objects/Wall/Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":157.5,"scaleY":1.5,"x":-64.0,"y":-96.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_183AF004_2","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_183AF004_2","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":156.14062,"scaleY":16.0,"spriteId":{"name":"BackgroundSP","path":"sprites/BackgroundSP/BackgroundSP.yy",},"x":0.0,"y":0.0,},

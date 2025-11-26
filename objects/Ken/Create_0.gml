@@ -15,6 +15,7 @@ OnGround = true;
 RCdash = 15;
 RCdisponible = true;
 RCdashing = false;
+RCooldown = true;
 Atacando = false;
 PuedeAtacar = true;
 Ulti = false;

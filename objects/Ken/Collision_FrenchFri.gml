@@ -14,7 +14,7 @@ if(Invincible == false){
 	vspeed = 0;
 	hspeed = 0;
 	alarm[3] = 20;
-	alarm[9] = 60;
+	alarm[9] = 90;
 sprite_index = KenDamagedsp;
 Invincible = true;
 if(image_xscale == -1){

@@ -1,5 +1,5 @@
-if(!instance_exists(chicken)){
-room_persistent[room] = false;
+if(room == mapita){
+room_persistent[global.anterioroom] = true;
 room_restart()
 	
 }

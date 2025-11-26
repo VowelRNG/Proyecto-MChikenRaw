@@ -6,7 +6,6 @@ if(vida <= 0){
 	
 	if(Ken.Controlled != noone){
 	Ken.Controlled = noone
-	Ken.Vida += 1;
 	Ken.sprite_index = Kensp;
 	Ken.vspeed = 0
 		Ken.hspeed = 0
