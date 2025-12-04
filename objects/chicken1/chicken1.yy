@@ -1,13 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"chicken",
+  "%Name":"chicken1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Ken","path":"objects/Ken/Ken.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":5,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"chicken",
+  "name":"chicken1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"pollo1",
+    "path":"sprites/pollo1/pollo1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

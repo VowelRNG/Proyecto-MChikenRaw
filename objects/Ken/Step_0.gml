@@ -138,7 +138,7 @@ if(keyboard_check_pressed(ord("P")) && Herido == false && Atacando == false && U
 
 if(Atacando == true && Herido == false && RCdashing == false){
 	hspeed = 0;
-	if(Ken.image_xscale = -1){
+	if(image_xscale = -1){
 	x -= 1;
 }else {
 	x += 1;
